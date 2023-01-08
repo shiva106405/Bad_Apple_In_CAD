@@ -43,7 +43,7 @@ print("处理完毕")
 
 winsound.PlaySound("./BadApple.wav", flags=1)  #播放BGM，异步播放
 for frame in outputList:
-    mt1=mp1.AddMtext(mt1_insertpt1,20,frame)    #方法可查阅
+    mt1=mp1.AddMtext(mt1_insertpt1,20,frame)
     wincad.Update()
     mt1.Delete()
     time.sleep(0.01223)   #控制帧数，需要调试确定
